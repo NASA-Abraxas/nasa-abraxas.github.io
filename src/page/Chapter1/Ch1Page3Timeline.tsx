@@ -81,7 +81,7 @@ export const Ch1Page3Timeline = () => {
   }
 
   const [isAnimating, setIsAnimating] = useState(false);
-  const duration = 1;
+  const duration = 0.5;
   useEffect(() => {
     if (selected) {
       setIsAnimating(true);
