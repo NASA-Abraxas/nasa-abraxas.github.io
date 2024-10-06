@@ -22,41 +22,47 @@ import GamePage1Start from './page/Game/GamePage1Start';
 import GamePage2Start from './page/Game/GamePage2Start';
 import { QuizProvider } from './page/Game/QuizContext';
 import { QuizRoutes } from './page/Game/QuizRoutes';
+import AudioManager from './component/AudioManager';
+import { AudioProvider } from './context/AudioContext';
+
 
 function App() {
   const [difficulty, setDifficulty] = useState<DifficultyType>('senior');
 
   return (
-    <DifficultyContext.Provider value={{ difficulty, setDifficulty }}>
-      <ColumnNavContainer>
-        <OpacityTransitionAnimation>
-          <LoadingComponent />
-          <LogComponent />
-          <EarthGlobe />
-          <DialogueComponent />
-          {/* Chapter 1 */}
-          <Ch1Page0WhatIsPace />
-          <Ch1Page1Satellite />
-          <Ch1Page2PaceDetail />
-          <Ch1Page3Timeline />
-          {/* Chapter 2 */}
-          <Ch2Intro />
-          <Chapter2RoutesTest />
-          {/* Chapter 3 */}
-          <Ch3Page0Intro />
-          <Ch3Page1Dialogue />
-          <Ch3Page2GlobePin />
-          <Ch3Page3Dialogue />
-          {/* Game */}
-          <GamePage0Intro />
-          <GamePage1Start />
-          <GamePage2Start />
-          <QuizProvider>
-            <QuizRoutes />
-          </QuizProvider>
-        </OpacityTransitionAnimation>
-      </ColumnNavContainer>
-    </DifficultyContext.Provider>
+    <AudioProvider>
+        <AudioManager />
+      <DifficultyContext.Provider value={{ difficulty, setDifficulty }}>
+        <ColumnNavContainer>
+          <OpacityTransitionAnimation>
+            <LoadingComponent />
+            <LogComponent />
+            <EarthGlobe />
+            <DialogueComponent />
+            {/* Chapter 1 */}
+            <Ch1Page0WhatIsPace />
+            <Ch1Page1Satellite />
+            <Ch1Page2PaceDetail />
+            <Ch1Page3Timeline />
+            {/* Chapter 2 */}
+            <Ch2Intro />
+            <Chapter2RoutesTest />
+            {/* Chapter 3 */}
+            <Ch3Page0Intro />
+            <Ch3Page1Dialogue />
+            <Ch3Page2GlobePin />
+            <Ch3Page3Dialogue />
+            {/* Game */}
+            <GamePage0Intro />
+            <GamePage1Start />
+            <GamePage2Start />
+            <QuizProvider>
+              <QuizRoutes />
+            </QuizProvider>
+          </OpacityTransitionAnimation>
+        </ColumnNavContainer>
+      </DifficultyContext.Provider>
+    </AudioProvider>
   );
 }
 
