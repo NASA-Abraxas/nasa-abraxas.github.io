@@ -42,7 +42,7 @@ const Results: React.FC = () => {
     const [case1, setCase1] = React.useState(true);
     const [case2, setCase2] = React.useState(false);
 
-    const textAnimation1 = useTextAnimation("E-626 returns with limited knowledge. The Aquaferian Council attempts to address the environmental crises but lacks crucial information. Without understanding the importance of aerosols, phytoplankton, and the data collected by missions like PACE, their efforts fall short.", 30);
+    const textAnimation1 = useTextAnimation("E-626 returns with limited knowledge. The Aquaferian Council attempts to address the environmental crises but lacks crucial information. Without understanding the importance of aerosols, phytoplankton, and the data collected by PACE, their efforts fall short.", 30);
     const textAnimation2 = useTextAnimation("The oceans continue to deteriorate, harmful algal blooms devastate marine life, and air quality worsens. The planet faces irreversible damage, and hope dwindles among its inhabitants.", 30);
     useEffect(() => {
       setTimeout(() => {

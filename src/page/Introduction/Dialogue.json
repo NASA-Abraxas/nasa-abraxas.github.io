@@ -1,7 +1,7 @@
 {
   "junior": {
     "fullTextsDoctor": [
-      "Attention unidentified spaceship, this is NASA Mission Control. You have entered Earth's orbit. Please tell us who you are and why you're here immediately.",
+      "Attention unidentified spaceship, this is NASA Mission Control. You have entered Earth's orbit. Please tell us who you are and why you are here immediately.",
       "Aquaferia? That's not a planet we're familiar with. Can you tell us where it is compared to our solar system?",
       "Understood, E-626. For better communication, may we connect directly with your main computer?"
     ],
@@ -26,7 +26,7 @@
   "senior": {
     "fullTextsDoctor": [
       "Attention unidentified spacecraft, this is NASA Mission Control. You have entered a restricted Earth orbit. Please identify yourself and state your intentions immediately.",
-      "Aquaferia? That is not a celestial body known to us. Could you specify your location relative to our solar system?",
+      "Aquaferia? That is not a planet known to us. Can you specify your location relative to our solar system?",
       "Acknowledged, E-626. To facilitate secure and efficient communication, may we establish a direct data link with your main computer system?"
     ],
     "fullTextsAlien": [
