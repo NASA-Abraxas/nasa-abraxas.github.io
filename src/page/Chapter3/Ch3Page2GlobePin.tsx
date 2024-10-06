@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 import Globe from 'react-globe.gl';
 import { Object3D, Vector3 } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/Addons.js';
-import { DialogueBoxRight } from '../../component/DialogueBoxRightFitContent';
+import { DialogueBoxRight } from '../../component/DialogueBoxRight';
 import { NextButton } from '../../component/NextButton';
 import { DifficultyContext } from '../../context/DifficultyContext';
 import { useTextAnimation } from '../../hook/useTextAnimation';
@@ -38,7 +38,7 @@ export const Ch3Page2GlobePin: React.FC = () => {
       ? "PACE data can influence many aspects of our society. Rotate the Earth and click on the points to learn more."
       : "PACE data influence a multitude of societal sectors. Rotate the globe and select various points of interest to learn more.";
   const { text, startAnimation } = useTextAnimation(fullText, 50, () => {
-    gsap.to(`.${styles['dialogue-container']}>div`, { yPercent: -100, duration: 1, delay: 3 });
+    gsap.to(`.${styles['dialogue-container']}>div`, { yPercent: -200, duration: 2, delay: 3 });
     setTimeout(() => {
       setIsTextEnded(true);
     }, 4000);
@@ -68,7 +68,7 @@ export const Ch3Page2GlobePin: React.FC = () => {
           // Ensure pin is facing outward (towards space)
           pinModel.lookAt(new Vector3(0, 0, 0));
           // rotate object to right orientation
-          pinModel.rotateX(Math.PI / 2 * 0.33);
+          pinModel.rotateX(Math.PI / 2);
           // Return the pin model with its lat/lng
           return {
             lat: pinPos.lat,
@@ -175,10 +175,9 @@ export const Ch3Page2GlobePin: React.FC = () => {
         {selected === "Wetland" && <Wetland />}
       </div>}
 
-      {!isTextEnded && <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez">
-        {text}
-      </DialogueBoxRight>
-      }
+      {!isTextEnded && <div className={styles['dialogue-container']}>
+        <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez" text={text} fullText={fullText} />
+      </div>}
 
       {isNextButtonVisible && !selected && <NextButton delay={1000} />}
       {selected && <div className={styles['button-container']}>

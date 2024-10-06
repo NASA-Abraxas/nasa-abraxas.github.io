@@ -24,8 +24,9 @@
   border: 1px solid white;
   min-width: 20%;
   width: fit-content;
-  padding: 0.5em;
+  padding: 0.4em;
   text-align: center;
+  font-size: 0.8em;
 }
 
 .dialogue-text {

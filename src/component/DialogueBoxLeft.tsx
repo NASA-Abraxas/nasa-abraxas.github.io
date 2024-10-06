@@ -14,7 +14,9 @@ export const DialogueBoxLeft: React.FC<DialogueBoxProps> = ({ imageSrc, name, is
   const textAnim = useTextAnimation(text);
   if (isAnimated) {
     useEffect(() => {
-      textAnim.startAnimation();
+      setTimeout(() => {
+        textAnim.startAnimation();
+      }, 1000);
     }, []);
   }
 

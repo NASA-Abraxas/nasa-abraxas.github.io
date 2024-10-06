@@ -20,22 +20,22 @@
   z-index: 1;
 }
 
-.doctor-container {
+.doctor-container,
+.alien-container {
   display: flex;
   position: absolute;
-  top: 10vh;
-  width: 100vw;
+  width: 90vw;
+  height: 22vh;
   justify-content: center;
   align-items: center;
 }
 
+.doctor-container {
+  top: 10vh;
+}
+
 .alien-container {
-  display: flex;
-  position: absolute;
   top: 35vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
 }
 
 .loader-container {
@@ -67,6 +67,6 @@
 }
 
 .skip-button {
-  position:absolute;
+  position: absolute;
   left: 80%;
 }

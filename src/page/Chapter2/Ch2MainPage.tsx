@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import ArrowButton from '../../component/ArrowButton';
-import { DialogueBoxRight } from "../../component/DialogueBoxRightBottom";
+import { DialogueBoxRight } from "../../component/DialogueBoxRight";
 import ParallaxWaves from '../../component/ParallaxWaves';
 import { DifficultyContext } from '../../context/DifficultyContext';
 import { useNavigateNextPage } from '../../hook/useNavigateNextPage';
@@ -110,9 +110,7 @@ const Ch2MainPage: React.FC = () => {
           </Fade>
         </div>
         <div className={styles['dialogue-container']}>
-          <DialogueBoxRight imageSrc="/character_image/rodriguez.png" name="Dr. Rodriguez">
-            {textAnimation1}
-          </DialogueBoxRight>
+          <DialogueBoxRight imageSrc="/character_image/rodriguez.png" name="Dr. Rodriguez" text={textAnimation1} isAnimated />
         </div>
         <div className={styles['bottom-button-container']}>
           <ArrowButton direction="down" onClick={handleDown} text='Ocean' />
