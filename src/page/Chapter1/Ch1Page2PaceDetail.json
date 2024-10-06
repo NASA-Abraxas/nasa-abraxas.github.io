@@ -1,0 +1,56 @@
+{
+  "OCI": {
+    "title": "Ocean Color Instrument (OCI)",
+    "content": {
+      "junior": "PACE's main tool is the Ocean Color Instrument. It's like a super-powerful camera that can see many colors of light. It will help us measure light in very fine detail, more than any previous NASA satellite sensors. This will extend important ocean color data for climate studies.",
+      "intermediate": "PACE's primary sensor, the Ocean Color Instrument (OCI), is a highly advanced optical spectrometer. It measures properties of light over portions of the electromagnetic spectrum, enabling continuous measurement of light at finer wavelength resolutions than previous NASA satellite sensors. This extends key ocean color data records for climate studies, allowing for more detailed analysis of oceanic biological and chemical properties.",
+      "senior": "The centerpiece of PACE, the OCI is an advanced hyperspectral optical spectrometer engineered to measure light properties across a broad segment of the electromagnetic spectrum. It offers continuous measurement at finer wavelength resolutions than any previous NASA satellite sensors. This precision extends critical ocean color data records essential for climate studies, facilitating unprecedented analyses of oceanic biological and chemical properties through high spectral fidelity."
+    },
+    "cameraPosition": [7.5, -0.5, -1.1]
+  },
+  "SPEXone": {
+    "title": "SPEXone",
+    "content": {
+      "junior": "This instrument is a multi-angle polarimeter. It measures the intensity and the way light is polarized (how light waves are oriented) after bouncing off Earth's atmosphere, land, and ocean. It focuses on measuring tiny particles in the air called aerosols.",
+      "intermediate": "PACE's SPEXone instrument is a multi-angle polarimeter. It measures the intensity, Degree of Linear Polarization (DoLP), and Angle of Linear Polarization (AoLP) of sunlight reflected from Earth's atmosphere, land surface, and ocean. By achieving high accuracy in DoLP measurements, SPEXone facilitates precise characterization of aerosols in the atmosphere, which is essential for understanding their impact on climate and air quality.",
+      "senior": "SPEXone is a sophisticated multi-angle polarimeter designed to measure the intensity, Degree of Linear Polarization (DoLP), and Angle of Linear Polarization (AoLP) of sunlight reflected from Earth's atmosphere, terrestrial surfaces, and oceans. Achieving exceptional accuracy in DoLP measurements, SPEXone enables precise characterization of atmospheric aerosols, which is crucial for understanding their impacts on climate systems, air quality, and public health."
+    },
+    "cameraPosition": [0, -3.6, -7]
+  },
+  "HARP2": {
+    "title": "HARP2 (Hyper-Angular Rainbow Polarimeter #2)",
+    "content": {
+      "junior": "HARP2 is a wide-angle imaging polarimeter. It takes pictures from many different angles and measures the polarization of light. It helps us study aerosol particles and clouds, as well as properties of land and water surfaces.",
+      "intermediate": "HARP2 is a wide-angle imaging polarimeter designed to measure aerosol particles and clouds, as well as properties of land and water surfaces. It combines data from multiple viewing angles (up to 60), four spectral bands in the visible and near-infrared ranges, and three angles of linear polarization. This allows scientists to determine aerosol size distribution, concentration, refractive indices, and particle shape, contributing to improved climate modeling and weather forecasting.",
+      "senior": "HARP2 is an innovative wide-angle imaging polarimeter intended to assess aerosol particles, cloud properties, and surface characteristics of land and water. It amalgamates data from multiple viewing angles (up to 60), spanning four spectral bands in the visible to near-infrared range, and employs three polarization angles. This comprehensive dataset allows scientists to ascertain aerosol size distributions, concentrations, refractive indices, and particle morphologies, thereby enhancing climate modeling and weather forecasting accuracy."
+    },
+    "cameraPosition": [4, -4, -5]
+  },
+  "Radiator Shield": {
+    "title": "Radiator Shield",
+    "content": {
+      "junior": "A Radiator Shield blocks out nearly 80% of Earth's heat. Made from lightweight, highly reflective materials, the shield works by radiating heat away from the spacecraft into space, keeping PACE's sensitive instruments cool and working properly.",
+      "intermediate": "A Radiator Shield blocks out nearly 80% of Earth's thermal energy. Made from lightweight, highly reflective materials, the shield radiates heat away from the spacecraft into space. This prevents overheating and ensures the longevity and precision of PACE's sensitive observational equipment, maintaining optimal operating temperatures for the instruments.",
+      "senior": "The Radiator Shield is meticulously designed to block approximately 80% of Earth's thermal energy. Constructed from lightweight, highly reflective materials, it dissipates heat away from the spacecraft into the expanse of space. This thermal regulation is vital to prevent instrument overheating, ensuring the longevity and precision of PACE's sensitive observational equipment."
+    },
+    "cameraPosition": [4.5, -0.3, -5.2]
+  },
+  "Bus": {
+    "title": "Bus",
+    "content": {
+      "junior": "The central part of PACE is called the \"bus.\" It serves as the main body of the spacecraft, providing places to attach the science instruments, solar panels, communication equipment, and more. It also houses electronic systems that provide power and control for the spacecraft.",
+      "intermediate": "The central part of PACE is called a \"bus.\" It serves as the structural framework for the spacecraft, providing mounting points for scientific instruments, solar arrays, communication equipment, and other essential components. It also houses electronic systems that distribute power and manage information needed to operate the spacecraft efficiently.",
+      "senior": "Serving as the structural backbone of PACE, the \"bus\" accommodates the mounting of scientific instruments, solar arrays, communication apparatus, and other essential components. It houses the electronic systems responsible for power distribution and data management, integral to the spacecraft's efficient operation."
+    },
+    "cameraPosition": [0.3, 0.4, -7.7]
+  },
+  "Solar Array": {
+    "title": "Solar Array",
+    "content": {
+      "junior": "An array of solar panels is needed to power PACE. Before launch, the solar array is folded up and then opens up in space. The beam is a single piece that connects the solar array to the bus.",
+      "intermediate": "An array of solar panels is required to power PACE. Before launch, the solar array is folded and then deployed in orbit. The solar panels convert sunlight into electrical energy, supplying power to all onboard instruments and systems. The Beam is a structural component that connects the Solar Array to the Bus.",
+      "senior": "PACE relies on an array of solar panels to harness solar energy. Prior to launch, these panels are stowed in a compact, folded state and subsequently deploy once in orbit. The solar arrays convert sunlight into electrical power, energizing all onboard systems and instruments. The structural beam connects the solar array to the bus, ensuring stability and optimal alignment."
+    },
+    "cameraPosition": [0.5, 3.2, 10.5]
+  }
+}

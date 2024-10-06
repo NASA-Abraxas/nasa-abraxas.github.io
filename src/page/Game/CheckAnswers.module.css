@@ -1,0 +1,35 @@
+.textBox {
+    position: absolute;
+    top: 35vh;
+    width: 60vw;
+    left: 20vw;
+    height: 20vh;
+    line-height: 17vh;
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .button-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    top: 70vh;
+  }
+
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* Space background */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

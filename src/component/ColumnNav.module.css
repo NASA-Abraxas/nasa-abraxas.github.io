@@ -1,0 +1,13 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15% 2%;
+  gap: 2%;
+}
+
+.nav-container a {
+  width: fit-content;
+}

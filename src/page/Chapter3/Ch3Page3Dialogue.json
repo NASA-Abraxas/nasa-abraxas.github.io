@@ -1,0 +1,26 @@
+{
+  "junior": {
+    "fullTextsDoctor": [
+      "Absolutely, E-626. By understanding and monitoring our planet's oceans and atmosphere, we can make informed decisions to protect and sustain life—knowledge that can be shared across the universe."
+    ],
+    "fullTextsAlien": [
+      "This is incredible! The PACE mission's data not only helps Earth but could also provide insights to assist Aquaferia."
+    ]
+  },
+  "intermediate": {
+    "fullTextsDoctor": [
+      "Absolutely, E-626. By understanding and monitoring our planet's oceans and atmosphere, we can make informed decisions to protect and sustain life—knowledge that can be shared across the universe."
+    ],
+    "fullTextsAlien": [
+      "This is incredible! The PACE mission's data not only helps Earth but could also provide insights to assist Aquaferia."
+    ]
+  },
+  "senior": {
+    "fullTextsDoctor": [
+      "Indeed, E-626. By advancing our comprehension of Earth's oceans and atmosphere through missions like PACE, we develop sophisticated tools and knowledge that can be instrumental in preserving planetary environments beyond our own. Such collaborative endeavors are essential for fostering sustainability and resilience across the cosmos."
+    ],
+    "fullTextsAlien": [
+      "This information is extraordinary! The data procured from the PACE mission not only augment Earth's environmental monitoring capabilities but could also offer invaluable insights to address the environmental challenges on Aquaferia."
+    ]
+  }
+}

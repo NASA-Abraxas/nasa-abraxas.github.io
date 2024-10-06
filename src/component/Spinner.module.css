@@ -1,0 +1,31 @@
+.loader {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+}
+
+.horizontal {
+  transform: rotate(45deg);
+}
+
+.vertical {
+  transform: rotate(-45deg);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

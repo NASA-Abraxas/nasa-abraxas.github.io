@@ -1,0 +1,127 @@
+.wave-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.waves {
+  position:absolute;
+  width: 2835px;
+  height:20vh;
+  bottom: 0;
+}
+
+
+.waves .parallax > img {
+  position:absolute;
+  width:100%;
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.waves .parallax > img:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 4s;
+  bottom: -35vh;
+  z-index: 7;
+}
+.waves .parallax > img:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 7s;
+  bottom: -10vh;
+  z-index: 6;
+}
+.waves .parallax > img:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 10s;
+  bottom: -0vh;
+  z-index: 5;
+}
+.waves .parallax > img:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 15s;
+  bottom: 12vh;
+  z-index: 4;
+}
+.waves .parallax > img:nth-child(5) {
+  animation-delay: -6s;
+  animation-duration: 20s;
+  bottom: 15vh;
+  z-index: 3;
+}
+.waves .parallax > img:nth-child(6) {
+  animation-delay: -7s;
+  animation-duration: 30s;
+  bottom: 23vh;
+  z-index: 2;
+}
+.waves .parallax > img:nth-child(7) {
+  animation-delay: -8s;
+  animation-duration: 40s;
+  bottom: 29vh;
+  z-index: 1;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-800px,0,0);
+  }
+  100% { 
+    transform: translate3d(-87.5px,0,0);
+  }
+}
+
+
+
+
+.clouds {
+  position:absolute;
+  width: 3000px;
+  height:60vh;
+  top: 0;
+}
+
+
+.clouds .parallax > img {
+  position:absolute;
+  animation: cloud-move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.clouds .parallax > img:nth-child(1) {
+  width: 20vw;
+  animation-delay: -2s;
+  animation-duration: 24s;
+  bottom: 20vh;
+}
+.clouds .parallax > img:nth-child(2) {
+  width: 30vw;
+  animation-delay: -3s;
+  animation-duration: 27s;
+  bottom: 30vh;
+}
+.clouds .parallax > img:nth-child(3) {
+  width: 40vw;
+  animation-delay: -4s;
+  animation-duration: 33s;
+  bottom: 15vh;
+}
+.clouds .parallax > img:nth-child(4) {
+  width: 25vw;
+  animation-delay: -5s;
+  animation-duration: 45s;
+  bottom: 10;
+}
+@keyframes cloud-move-forever {
+  0% {
+   transform: translate3d(-800px,0,0);
+  }
+  100% { 
+    transform: translate3d(3000px,0,0);
+  }
+}
+
+.lighthouse {
+  position:absolute;
+  width: auto;
+  height: 60%;
+  bottom: 24%;
+  left: 0%;
+  z-index: 4;
+}

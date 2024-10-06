@@ -1,0 +1,52 @@
+.dialogue-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 5vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    position:relative;
+  }
+  
+  .character-image-container {
+    position: absolute;
+    top: 0px;
+  }
+  
+  .character-image {
+    width: auto; /* Adjust size accordingly */
+    height: 100px;
+    border: 3px solid white; /* Adds border around the character image */
+  }
+  
+  .text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    left: 150px;
+    top: 0;
+  }
+  
+  .character-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    width: 15vw;
+    height: 4vh;
+    line-height: 4vh;
+    border: 3px solid white; /* Underline for character name */
+    box-sizing: border-box;
+  }
+  
+  .dialogue-text {
+    font-size: 1.2rem;
+    border: 3px solid white; 
+    min-height: 8vh;
+    width: 75vw;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: -3px;
+  }
+  

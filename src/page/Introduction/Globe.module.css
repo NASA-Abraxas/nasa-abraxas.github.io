@@ -1,0 +1,174 @@
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  min-width: 200px;
+  background-color: black;
+  top: 0;
+  position: absolute;
+}
+
+.mission-text {
+  color: white;
+}
+
+.pace-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 1000px;
+  background-color: black;
+  top: 10vh;
+  position: absolute;
+  height: 20vh;
+}
+
+.pace-text {
+  font-size: 3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 5.9rem;
+  position: absolute;
+  color: white;
+}
+
+.d-text {
+  position: absolute;
+  top: 15vh;
+  color: white;
+}
+
+.pace-container h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+
+.globe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 80vh;
+  width: 100%;
+}
+
+.button-container {
+  z-index: 10;
+  position: absolute;
+  animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  border: none;
+  gap: 1em;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container label {
+  width: 8rem;
+  text-align: center;
+}
+
+.radio-container span {
+  font-size: 0.7em;
+  color: gray;
+  transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* if radio selected, size up to 1.2em */
+.radio-container input[type="radio"]:checked + span,
+.radio-container input[type="radio"]:hover + span {
+  font-size: 1em;
+  color: white;
+  transition: font-size 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.teacher-button-container {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  font-size: 0.7em;
+}
+
+.teacher-button-container button {
+  border-color: transparent;
+  color: gray;
+}
+
+.markdown-container {
+  width: 100%;
+  height: 100%;
+}
+
+.markdown-container > div {
+  padding: 0 7%;
+}
+
+.markdown-container > div > h2 {
+  margin: 20px 0;
+}
+
+.markdown-container > div > p {
+  margin: 20px 0;
+}
+
+.markdown-container > div > ul {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.markdown-container > button {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  border-color: transparent;
+}

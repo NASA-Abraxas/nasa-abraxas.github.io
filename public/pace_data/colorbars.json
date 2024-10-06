@@ -1,0 +1,10 @@
+{
+    "Aerosol_Optical_Thickness":"/pace_data/colorbar/aero.png",
+    "Phytoplankton_Carbon":"/pace_data/colorbar/carbon.png",
+    "Chlorophyll_A":"/pace_data/colorbar/chlor.png",
+    "Cloud_Particle_Effective_Radius_ICE":"/pace_data/colorbar/ice_cer.png",
+    "Cloud_Optical_Thickness_ICE":"/pace_data/colorbar/ice_cot.png",
+    "Cloud_Particle_Effective_Radius_WATER":"/pace_data/colorbar/water_cer.png",
+    "Cloud_Optical_Thickness_WATER":"/pace_data/colorbar/water_cot.png",
+    "Apparent_Visible_Wavelength": "/pace_data/colorbar/wavelength.png"
+}

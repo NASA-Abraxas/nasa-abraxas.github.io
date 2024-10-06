@@ -1,0 +1,109 @@
+/* src/components/HorizontalSlider.module.css */
+
+.slider-container {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-section {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slider-image {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+}
+
+.slider-title {
+  font-size: 2rem;
+  margin-top: 20px;
+  position: absolute;
+  top: 65%;
+}
+
+.slider-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+  top: 75%;
+  width: 70%;
+  position: absolute;
+}
+
+/* Arrow button styles */
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  background-color: transparent !important; 
+  box-shadow: none !important;
+}
+
+.arrow-left:after .arrow-right:after {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.arrow-left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.arrow-left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.arrow-right:hover polyline,
+.arrow-right:focus polyline {
+  stroke-width: 3;
+}
+
+.arrow-right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}

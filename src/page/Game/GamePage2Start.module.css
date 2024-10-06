@@ -1,0 +1,65 @@
+/* AnimatedIntro.module.css */
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0); /* Black background for space */
+    overflow: hidden;
+  }
+  
+  /* Earth Styles */
+  .earth {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+  
+  /* Spaceship Styles */
+  .spaceship {
+    position: absolute;
+    width: auto;
+    height: 30px;
+    top: 48%;
+    left: -700px; /* Start off-screen */
+    z-index: -1;
+    animation: slideIn 3s forwards;
+    animation-delay: 2s; /* Start after Earth has faded in */
+  }
+  
+  /* Text Container Styles */
+  .textContainer {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    z-index: 3;
+    opacity: 0;
+    animation: fadeInText 0.1s forwards;
+    text-align: left;
+  }
+  
+  /* Keyframes for Spaceship Sliding In */
+  @keyframes slideIn {
+    from {
+      left: -700px;
+    }
+    to {
+      left: calc(50% - 200px); /* Adjust based on Earth position */
+    }
+  }
+  
+  /* Keyframes for Text Fade-In */
+  @keyframes fadeInText {
+    to {
+      opacity: 1;
+    }
+  }
+  

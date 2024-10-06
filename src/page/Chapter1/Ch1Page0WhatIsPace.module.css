@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  padding: 5% 5% 10% 5%;
+  gap: 5%;
+}
+
+.logo-container {
+  flex: 1;
+  max-height: 60%;
+}
+
+.logo-container img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article {
+  text-align: left;
+  align-self: center;
+  position: relative;
+}
+
+.article p {
+  border: 3px solid white;
+  padding: 0.5rem;
+}
+
+.article img {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  border: 3px solid white;
+  border-bottom: none;
+}

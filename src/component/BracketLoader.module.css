@@ -1,0 +1,62 @@
+/* src/components/BracketLoader.css */
+
+.bracket-loader-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%; /* Ensure container spans full width */
+  }
+  
+  .left-bracket, .right-bracket {
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    border-color: white;
+    border-style: solid;
+    border-top: solid; /* Top and bottom borders */
+    border-bottom: solid;
+  }
+  
+  .left-bracket {
+    left: calc(50%); /* Centered, then offset dynamically */
+    border-right: none; /* No right side for the left bracket */
+    animation: move-left cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards; /* Custom ease-in-out */
+  }
+  
+  .right-bracket {
+    right: calc(50%); /* Centered, then offset dynamically */
+    border-left: none; /* No left side for the right bracket */
+    animation: move-right cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards; /* Custom ease-in-out */
+  }
+  
+  @keyframes move-left {
+    0% {
+      left: calc(50%); /* Start from the center */
+    }
+    100% {
+      left: 0; /* Move to the far left */
+    }
+  }
+  
+  @keyframes move-right {
+    0% {
+      right: calc(50%); /* Start from the center */
+    }
+    100% {
+      right: 0; /* Move to the far right */
+    }
+  }
+  
+  .content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in;
+    text-align: center;
+  }
+  
+  .content-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  

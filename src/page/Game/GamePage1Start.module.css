@@ -1,0 +1,104 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* Space background */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spaceshipContainer {
+    position: absolute;
+    left: -500px; /* Start further off-screen to accommodate glow */
+    display: flex;
+    align-items: center;
+    transition: left 2s ease-in-out;
+  }
+  
+  .centered {
+    left: calc(50% - 440px); /* Center horizontally (adjust based on width) */
+  }
+  
+  .exiting {
+    left: 110%; /* Move off to the right */
+    transition: left 1s ease-in-out;
+  }
+  
+  .spaceship {
+    width: 500px; /* Increased size to better showcase the glow */
+    z-index: 2; /* Ensure spaceship is above the glow */
+  }
+  
+  .glow {
+    position: absolute;
+    left: 380px;
+    bottom: 0px; /* Adjust based on spaceship image */
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(0, 215, 255, 1) 0%, rgba(0, 140, 255, 0.8) 60%, rgba(0, 69, 255, 0.6) 100%);
+    border-radius: 50%;
+    filter: blur(25px); /* Increased blur for a softer, more luminous glow */
+    opacity: 1; /* Reduced transparency for a brighter glow */
+    animation: pulsate 1.5s infinite;
+    z-index: 1; /* Ensure glow is behind the spaceship */
+    will-change: transform, opacity; /* Hint for performance optimization */
+  }
+  
+  
+  .textBox {
+    position: absolute;
+    top: 5vh;
+    width: 60vw;
+    left: 20vw;
+    height: 25vh;
+    animation: fadeIn 1s ease-in-out;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 1.8rem;
+  }
+  
+  
+  /* Fade-in animation for text box */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .button-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    top: 70vh;
+  }
+
+  .button {
+    font-size: 1rem;
+  } 
+
+  @keyframes pulsate {
+    0% {
+      transform: translateX(-50%) scale(0.6);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateX(-50%) scale(1.1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(-50%) scale(0.6);
+      opacity: 0.7;
+    }
+  }

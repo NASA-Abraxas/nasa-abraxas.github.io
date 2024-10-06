@@ -1,0 +1,48 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 20, 38);
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.video {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 45%;
+  left: 10%;
+  object-fit: cover;
+}
+
+.title {
+  position:absolute;
+  width: 100%;
+  text-align: center;
+  top: 5%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  top: 20%;
+  font-size: 1.2rem;
+}
+
+.slider-container {
+  position: absolute;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 140vh;
+  left: 20vw;
+}

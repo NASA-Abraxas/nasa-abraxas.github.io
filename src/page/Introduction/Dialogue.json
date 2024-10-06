@@ -1,0 +1,38 @@
+{
+  "junior": {
+    "fullTextsDoctor": [
+      "Attention unidentified spaceship, this is NASA Mission Control. You have entered Earth's orbit. Please tell us who you are and why you're here immediately.",
+      "Aquaferia? That's not a planet we're familiar with. Can you tell us where it is compared to our solar system?",
+      "Understood, E-626. For better communication, may we connect directly with your main computer?"
+    ],
+    "fullTextsAlien": [
+      "Greetings, people of Earth! I am E-626 from the planet Aquaferia. I come in peace, seeking knowledge about your PACE project to help my home world.",
+      "My planet is many light-years away, in a distant part of the galaxy. We've been watching your work in studying the environment and believe your PACE project could help us solve important problems on Aquaferia.",
+      "Yes, please! I'm eager to learn and share information."
+    ]
+  },
+  "intermediate": {
+    "fullTextsDoctor": [
+      "Attention unidentified spacecraft, this is NASA Mission Control. You have entered restricted Earth orbit. Please identify yourself and state your intentions immediately.",
+      "Aquaferia? That's not a planet we're familiar with. Can you specify your location in relation to our solar system?",
+      "Understood, E-626. For a more secure and clear communication, may we establish a direct link with your main computer?"
+    ],
+    "fullTextsAlien": [
+      "Greetings, representatives of Earth. I am E-626 from the planet Aquaferia. I come in peace, seeking knowledge about your PACE project to assist my home world.",
+      "My planet resides many light-years away, in a distant sector of the galaxy. We have observed your efforts in environmental science and believe your PACE project could help us address critical issues on Aquaferia.",
+      "Permission granted. I am eager to learn and share information."
+    ]
+  },
+  "senior": {
+    "fullTextsDoctor": [
+      "Attention unidentified spacecraft, this is NASA Mission Control. You have entered a restricted Earth orbit. Please identify yourself and state your intentions immediately.",
+      "Aquaferia? That is not a celestial body known to us. Could you specify your location relative to our solar system?",
+      "Acknowledged, E-626. To facilitate secure and efficient communication, may we establish a direct data link with your main computer system?"
+    ],
+    "fullTextsAlien": [
+      "Salutations, representatives of Earth. I am E-626 from the planet Aquaferia. I come in peace, seeking knowledge about your PACE mission to aid my home planet.",
+      "My planet is situated many light-years away, in a distant sector of the galaxy. We have been observing your advancements in environmental science and believe that your PACE mission could assist us in addressing critical challenges on Aquaferia.",
+      "Permission granted. I am eager to exchange knowledge and information."
+    ]
+  }
+}

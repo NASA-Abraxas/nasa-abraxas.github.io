@@ -1,0 +1,90 @@
+/* src/components/BorderBlink.module.css */
+.borderContainer {
+  position: relative;
+  display: inline-block; /* Ensures the container wraps the child */
+  border-style: solid;
+  border-color: transparent; /* Initial transparent border */
+  animation: blinkBorder 1s ease-out forwards;
+  box-sizing: border-box; /* Ensure padding and border are included in size calculations */
+  width: 50%;
+  height: 100%;
+}
+
+.borderCorners {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none; /* Prevents interaction with the corners */
+}
+
+.corner {
+  position: absolute;
+  box-sizing: border-box; /* Include border size in the corner dimensions */
+  border-style: solid;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.cornerTopLeft {
+  top: -2px; /* Negative offset based on border thickness */
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.cornerTopRight {
+  top: -2px;
+  right: -2px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.cornerBottomLeft {
+  bottom: -2px;
+  left: -2px;
+  border-right: none;
+  border-top: none;
+}
+
+.cornerBottomRight {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+@keyframes blinkBorder {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contentHidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contentVisible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

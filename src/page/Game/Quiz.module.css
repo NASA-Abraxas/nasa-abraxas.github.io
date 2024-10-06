@@ -1,0 +1,198 @@
+/* @import "bootstrap/dist/css/bootstrap.min.css";  */
+
+.quizContainer {
+  font-family: "Quantico", sans-serif;
+  color: white;
+  /* background-color: black; */
+  padding: 20px;
+  margin: 0;
+  height: 100vh;  /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.questionHeader {
+  font-size: 24px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressBarContainer {
+  width: 100%;
+}
+
+.questionNumber {
+  border: 2px solid white;
+  padding: 2px 20px;
+  margin-bottom: 30px;
+}
+
+.questionBody {
+  display: flex;
+  margin: 40px 0;
+  flex-grow: 1;
+  height: 100px;
+}
+
+.characterImage {
+  width: 170px;
+  height: 170px;
+  margin-right: 20px;
+  border: 1px solid white;
+}
+
+.characterDetails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 170px;
+}
+
+.characterName {
+  border: 1px solid white;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 350px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.questionText {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid white;
+  height: 60px;
+  font-size: 25px;
+}
+
+.answersSection {
+  display: flex;
+  align-items: center;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 10vh;
+}
+
+.answerButton {
+
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 70px;
+}
+
+.answerButton:first-child {
+  margin-top: 0;
+}
+
+
+.correctAnswer {
+  background-color: #4CAF50; /* Green for correct answers */
+}
+
+.correctAnswer:hover {
+  background-color: #4CAF50; /* Green for correct answers */
+}
+
+.wrongAnswer {
+  background-color: #f44336; /* Red for wrong answers */
+}
+
+.wrongAnswer:hover {
+  background-color: #f44336; /* Red for wrong answers */
+}
+
+.answerCharacterImage {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  margin-bottom: 170px;
+}
+
+.nextButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  top: 90vh;
+}
+
+.nextButton {
+  /* background-color: #333;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 16px; */
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+.nextButton {
+  position: relative;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: 0.15em solid white;
+  border-radius: 0.45em;
+  background: none;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.6em 1.2em;
+}
+
+.nextButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  pointer-events: none;
+}
+
+.nextButton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: white;
+  box-shadow: 0 0 2em 0.2em white;
+  transition: opacity 100ms linear;
+}
+
+.nextButton:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+
+.nextButton:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.nextButton:hover:after {
+  opacity: 1;
+}
+

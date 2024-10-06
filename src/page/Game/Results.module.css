@@ -1,0 +1,66 @@
+
+  .summary {
+    border: 1px solid white;
+    padding: 20px;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    width: 35vw;
+    height: 70vh;
+  }
+  
+  .score {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .details {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  .highlight {
+    color: #fff; /* Customize color if needed */
+  }
+  
+  .failureMessage {
+    position: absolute;
+    font-size: 20px;
+    top: 15vh;
+    left: 40vw;
+    width: 60vw;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .planetContainer {
+    position:absolute;
+    top: 25vh;
+    left: 40vw;
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+.tryAgainButton {
+    position: absolute;
+    top: 90vh;
+    left: 5vw;
+    width: 10vw;
+    text-align: center;
+}
+
+.finishButton {
+  position: absolute;
+  top: 90vh;
+  right: 5vw;
+  width: 10vw;
+  text-align: center;
+}
+  
+  
+  

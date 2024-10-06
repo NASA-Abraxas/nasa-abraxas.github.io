@@ -1,0 +1,20 @@
+{
+  "junior": {
+    "fullTextsDoctor": [
+      "They allow us to monitor the environment. Moreover, they have significant economic value. Let's find out."
+    ],
+    "fullTextsAlien": ["So, how can these data really help humans?"]
+  },
+  "intermediate": {
+    "fullTextsDoctor": [
+      "They allow us to monitor environmental changes and have significant economic and societal benefits. Let's explore how."
+    ],
+    "fullTextsAlien": ["So, how can these data really help humanity?"]
+  },
+  "senior": {
+    "fullTextsDoctor": [
+      "They empower us to monitor environmental changes meticulously, deepen our understanding of Earth's complex systems, and have profound economic and societal implications. Let's explore several pertinent examples."
+    ],
+    "fullTextsAlien": ["How do these data tangibly benefit humanity?"]
+  }
+}

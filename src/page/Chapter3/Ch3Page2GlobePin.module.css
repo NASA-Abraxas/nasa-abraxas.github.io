@@ -1,0 +1,31 @@
+.globe-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  top: 0;
+  left: 0;
+}
+
+.globe-container-small {
+  transform: translate(-25%, 0);
+}
+
+.description-container {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  flex: 1;
+  padding: 2.5%;
+  right: 0;
+}
+
+.button-container {
+  position: absolute;
+  width: fit-content;
+  left: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

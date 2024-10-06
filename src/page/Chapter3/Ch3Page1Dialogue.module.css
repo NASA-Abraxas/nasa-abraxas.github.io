@@ -1,0 +1,72 @@
+.globe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.dialogue-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.doctor-container {
+  display: flex;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.alien-container {
+  display: flex;
+  position: absolute;
+  top: 35vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  top: 80vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.skip-button-container {
+  display: flex;
+  position: absolute;
+  top: 80vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.skip-button {
+  position:absolute;
+  left: 80%;
+}

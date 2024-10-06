@@ -1,0 +1,10 @@
+[
+  { "lat": 34.4208, "lng": -119.6982, "id": "SantaBarbara" },
+  { "lat": 43.8041, "lng": -120.5542, "id": "Oregon" },
+  { "lat": 35.0262, "lng": 135.7808, "id": "Asia" },
+  { "lat": 38.8314, "lng": -77.3112, "id": "Marine" },
+  { "lat": -33.8415, "lng": 18.4636, "id": "SouthAfrica" },
+  { "lat": 35.1987, "lng": -97.4449, "id": "Oklahoma" },
+  { "lat": 40.7649, "lng": -111.8421, "id": "Western" },
+  { "lat": 37.5214, "lng": -76.105, "id": "Wetland" }
+]

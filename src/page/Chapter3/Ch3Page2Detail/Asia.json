@@ -1,0 +1,17 @@
+{
+  "desc1": {
+    "junior": "Ocean color satellite data is essential for sustainable water quality monitoring. This project combines satellite data with field observations to develop models that detect harmful algal blooms (HABs), red tides, and blue tides in coastal areas and lakes in Japan, Indonesia, and Thailand. ",
+    "intermediate": "Ocean color satellite data is essential for sustainable water quality monitoring. This project combines satellite observations with field data to develop models that detect harmful algal blooms (HABs), red tides, and blue tides in coastal areas and lakes in Japan, Indonesia, and Thailand. ",
+    "senior": "Sustained water quality monitoring through ocean color satellite data is pivotal for managing aquatic ecosystems. This initiative integrates satellite observations with in situ measurements to develop predictive models capable of detecting harmful algal blooms (HABs), red tides, and blue tides across coastal regions and inland water bodies in Japan, Indonesia, and Thailand. "
+  },
+  "desc2": {
+    "junior": "These aquatic regions are vital habitats but are vulnerable to environmental problems like eutrophication (too many nutrients) and HABs. Routine satellite monitoring helps manage and protect these waters. ",
+    "intermediate": "These aquatic regions are crucial habitats but are vulnerable to environmental issues like eutrophication and HABs, which can devastate fisheries and tourism. Routine satellite monitoring aids in early detection and management of these problems. ",
+    "senior": "These habitats are vital for biodiversity conservation, fisheries, and local economies yet are susceptible to anthropogenic pressures such as nutrient over-enrichment leading to eutrophication and HAB occurrences. Systematic satellite monitoring facilitates early warning systems and informed management interventions to mitigate ecological and socioeconomic impacts."
+  },
+  "desc3": {
+    "junior": "PACE will support this project by improving current water quality models and providing new hyperspectral data, enhancing HAB detection in coastal and inland waters. ",
+    "intermediate": "PACE's advanced hyperspectral data enhances current water quality models, improving the detection and analysis of HABs in coastal and inland waters.",
+    "senior": "PACE's advanced hyperspectral data significantly enhance water quality models by improving the detection, classification, and quantification of phytoplankton species implicated in HAB events, thereby supporting environmental stewardship and policy formulation."
+  }
+}

@@ -1,0 +1,17 @@
+.globe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+  }
+
+  .colorbar {
+    position:absolute;
+    width: 0px;
+  }
+
