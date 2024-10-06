@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useContext, useEffect, useRef, useState } from "react";
-import { DialogueBoxRight } from "../../component/DialogueBoxRightFitContent";
+import { DialogueBoxRight } from "../../component/DialogueBoxRight";
 import { NextButton } from "../../component/NextButton";
 import { DifficultyContext, DifficultyType } from "../../context/DifficultyContext";
 import { useTextAnimation } from "../../hook/useTextAnimation";
@@ -23,7 +23,8 @@ export const Ch1Page3Timeline = () => {
   const dimension = useWindowSize();
   const { difficulty } = useContext(DifficultyContext);
 
-  const { text, startAnimation } = useTextAnimation("This is history of our Earth observing project! Click on the images to learn more about each satellite.");
+  const fullText = "This is history of our Earth observing project! Click on the images to learn more about each satellite.";
+  const { text, startAnimation } = useTextAnimation(fullText);
   useEffect(() => {
     startAnimation();
   }, [startAnimation]);
@@ -80,7 +81,7 @@ export const Ch1Page3Timeline = () => {
   }
 
   const [isAnimating, setIsAnimating] = useState(false);
-  const duration = 2;
+  const duration = 1;
   useEffect(() => {
     if (selected) {
       setIsAnimating(true);
@@ -133,9 +134,9 @@ export const Ch1Page3Timeline = () => {
       {
         !selected
           ? <>
-            <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez">
-              {text}
-            </DialogueBoxRight>
+            <div className={styles['dialogue-container']}>
+              <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez" text={text} fullText={fullText} />
+            </div>
             <div className={styles["container"]}>
               <div className={styles["timeline"]}>
 
@@ -227,7 +228,7 @@ export const Ch1Page3Timeline = () => {
                 </p>
               </div>
               <div className={styles["button-container"]}>
-                <button onClick={handleReset}>Back to Timeline</button>
+                <button onClick={handleReset}>BACK TO TIMELINE</button>
               </div>
 
               <div className={styles["comparison-container"]}>

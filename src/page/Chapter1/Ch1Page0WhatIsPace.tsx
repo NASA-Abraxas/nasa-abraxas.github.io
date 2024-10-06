@@ -1,10 +1,9 @@
 import { useContext } from "react";
-import { NextButton } from "../../component/NextButton";
-import { OptionalRenderer } from "../../component/OptionalRenderer";
-import { DifficultyContext } from "../../context/DifficultyContext";
-import styles from "./Ch1Page0WhatIsPace.module.css";
 import { DialogueBoxLeft } from "../../component/DialogueBoxLeft";
-import { text1 } from './Ch1Page0WhatIsPace.json'
+import { NextButton } from "../../component/NextButton";
+import { DifficultyContext } from "../../context/DifficultyContext";
+import { text1 } from './Ch1Page0WhatIsPace.json';
+import styles from "./Ch1Page0WhatIsPace.module.css";
 
 export const Ch1Page0WhatIsPace = () => {
   const { difficulty } = useContext(DifficultyContext);

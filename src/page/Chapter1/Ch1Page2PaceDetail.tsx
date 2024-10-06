@@ -36,8 +36,9 @@ const distSq = (a: number[], b: number[]) => {
 }
 
 export const Ch1Page2PaceDetail = () => {
-  const { text, startAnimation } = useTextAnimation("Click on parts to see details.", 50, () => {
-    gsap.to(`.${styles['dialogue-container']}>div`, { yPercent: -100, duration: 1, delay: 3 });
+  const fullText = "Click on parts to see details.";
+  const { text, startAnimation } = useTextAnimation(fullText, 50, () => {
+    gsap.to(`.${styles['dialogue-container']}`, { yPercent: -200, duration: 2, delay: 3 });
   });
   useEffect(() => {
     startAnimation();
@@ -76,9 +77,7 @@ export const Ch1Page2PaceDetail = () => {
 
 
       <div className={styles['dialogue-container']}>
-        <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez">
-          {text}
-        </DialogueBoxRight>
+        <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez" text={text} fullText={fullText} />
       </div>
       {selectedPart && <div className={styles['description-container']}>
         <h2>{(partsData as PartsData)[selectedPart].title}</h2>
@@ -98,7 +97,7 @@ export const Ch1Page2PaceDetail = () => {
         <button id="Solar Array" onClick={handleButtonClick}>Solar Array</button>
       </nav>
 
-      <NextButton delay={15_000} />
+      <NextButton delay={12_000} />
     </div>
   )
 

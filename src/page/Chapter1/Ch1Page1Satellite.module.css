@@ -1,3 +1,11 @@
+.dialogue-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 60%;
+  height: 20%;
+}
+
 .embed-interact {
   position: absolute;
   width: 20%;

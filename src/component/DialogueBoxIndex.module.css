@@ -1,5 +1,6 @@
 .dialogue-box {
   display: flex;
+  gap: 1.5em;
   width: 100%;
   height: 100%;
 }
@@ -8,12 +9,12 @@
   width: auto;
   height: 100%;
   object-fit: contain;
-  margin-right: 20px;
   border: 1px solid white;
 }
 
 .dialogue-box > div {
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
   flex-grow: 1;
   min-height: 100%;
@@ -21,7 +22,6 @@
 
 .character-name {
   border: 1px solid white;
-  margin-bottom: 0.5rem;
   min-width: 20%;
   width: fit-content;
   padding: 0.5em;

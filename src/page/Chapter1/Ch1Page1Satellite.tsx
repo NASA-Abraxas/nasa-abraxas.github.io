@@ -32,12 +32,14 @@ export const Ch1Page1Satellite = () => {
   }, []);
 
   // text animation settings
-  const textAnimation1 = useTextAnimation("Let's find out more about PACE satellite!", 50,
+  const fullText1 = "Let's find out more about PACE satellite!";
+  const textAnimation1 = useTextAnimation(fullText1, 50,
     () => setTimeout(() => {
       textAnimation2.startAnimation();
       setIsInteractVisible(true);
     }, 2000));
-  const textAnimation2 = useTextAnimation("Rotate, zoom in to get a closer look.");
+  const fullText2 = "Rotate, zoom in to get a closer look.";
+  const textAnimation2 = useTextAnimation(fullText2);
   useEffect(() => { // Start the first text animation when the component is mounted
     textAnimation1.startAnimation();
   }, []);
@@ -46,9 +48,9 @@ export const Ch1Page1Satellite = () => {
   return (
     <div className="page-container">
       <BottomGlobe />
-      <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez">
-        {textAnimation2.isStarted ? textAnimation2.text : textAnimation1.text}
-      </DialogueBoxRight>
+      <div className={styles['dialogue-container']}>
+        <DialogueBoxRight imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez" text={textAnimation2.isStarted ? textAnimation2.text : textAnimation1.text} fullText={textAnimation2.isStarted ? fullText2 : fullText1} />
+      </div>
       <SatelliteContainer />
       {isInteractVisible && <div className={styles['embed-interact']} >
         <img src="embed_interact.svg" alt="interact" />
