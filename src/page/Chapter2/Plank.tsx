@@ -14,9 +14,9 @@ const Plank: React.FC = () => {
             <div className={styles["title"]}>What is Aerosol?</div>
             <div className={styles["text"]}>
                 {text1[difficulty]}
-                <a href="https://pace.oceansciences.org/match.htm">quiz</a>
+                <a href="https://pace.oceansciences.org/match.htm" target="_blank">quiz</a>
                 {text2[difficulty]}
-                <a href="https://pace.oceansciences.org/phytopia.htm">Phytopia</a>
+                <a href="https://pace.oceansciences.org/phytopia.htm" target="_blank">Phytopia</a>
                 {text3[difficulty]}
             </div>
             <div className={styles["img"]}>

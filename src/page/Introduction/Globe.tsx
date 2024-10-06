@@ -105,7 +105,7 @@ const EarthGlobe = () => {
     return (
       <div className={styles['markdown-container']}>
         <MarkdownTest />
-        <button onClick={() => setIsTeacherInstructionVisible(false)}>x</button>
+        <button onClick={() => setIsTeacherInstructionVisible(false)}>×</button>
       </div>
     )
   }
