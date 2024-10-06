@@ -47,6 +47,7 @@
   position: absolute;
   width: 90vw;
   height: 22vh;
+  max-height: 7em;
   justify-content: center;
   align-items: center;
 }
