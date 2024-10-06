@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { BottomGlobe } from '../../component/BottomGlobe';
-import DialogueBox from '../../component/DialogueBox';
+import { DialogueBoxLeft } from '../../component/DialogueBoxLeft';
 import { DifficultyContext, DifficultyType } from '../../context/DifficultyContext';
 import { useDialogue } from '../../hook/useDialogue';
 import { useNavigateNextPage } from '../../hook/useNavigateNextPage';
@@ -29,18 +29,20 @@ export const Ch3Page3Dialogue = () => {
             <BottomGlobe />
             <div className={styles["dialogue-container"]}>
                 {(dialogue.textIndex >= 0) && (<div className={styles['doctor-container']}>
-                    <DialogueBox
+                    <DialogueBoxLeft
                         imageSrc="/character_image/e626.png"
                         name="E-626"
                         text={dialogue.text1}
+                        fullText={dialogue.currentText1}
                     />
                 </div>)}
 
                 {(dialogue.textIndex >= 1) && (<div className={styles['alien-container']}>
-                    <DialogueBox
+                    <DialogueBoxLeft
                         imageSrc="/character_image/rodriguez.png"
                         name="Dr. Rodriguez"
                         text={dialogue.text2}
+                        fullText={dialogue.currentText2}
                     />
                 </div>)}
 

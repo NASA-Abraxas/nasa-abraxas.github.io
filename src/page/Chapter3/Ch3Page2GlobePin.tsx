@@ -118,7 +118,7 @@ export const Ch3Page2GlobePin: React.FC = () => {
         globeContainerRef.current.clientWidth / 2,
         globeContainerRef.current.clientHeight / 2
       );
-      const distance = 1.75; // Set a distance from the earth's surface
+      const distance = 2.1; // Set a distance from the earth's surface
       if (selected) {
         // calculate the midpoint between the current position and the new position
         // considering that lng -180 and 180 are the same point
