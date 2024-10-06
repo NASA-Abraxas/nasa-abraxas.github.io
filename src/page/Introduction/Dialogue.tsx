@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { BottomGlobe } from '../../component/BottomGlobe';
 import ChapterChange from '../../component/ChapterChange';
-import DialogueBox from '../../component/DialogueBox';
 import { DifficultyContext, DifficultyType } from '../../context/DifficultyContext';
 import { useDialogue } from '../../hook/useDialogue';
 import { useNavigateNextPage } from '../../hook/useNavigateNextPage';
