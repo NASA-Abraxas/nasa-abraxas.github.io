@@ -9,6 +9,7 @@ import { useNavigateNextPage } from '../../hook/useNavigateNextPage';
 import { useTextAnimation } from '../../hook/useTextAnimation';
 import dialogueData from './Dialogue.json';
 import styles from './Dialogue.module.css';
+import { DialogueBoxLeft } from '../../component/DialogueBoxLeft';
 
 type DialogueData = {
     [key in DifficultyType]: {
@@ -62,18 +63,20 @@ const DialogueComponent = () => {
                 </>)}
 
                 {(dialogue.textIndex >= 0) && (<div className={styles['doctor-container']}>
-                    <DialogueBox
+                    <DialogueBoxLeft
                         imageSrc="/character_image/rodriguez.png"
                         name="Dr. Rodriguez"
                         text={dialogue.text1}
+                        fullText={dialogue.currentText1}
                     />
                 </div>)}
 
                 {(dialogue.textIndex >= 1) && (<div className={styles['alien-container']}>
-                    <DialogueBox
+                    <DialogueBoxLeft
                         imageSrc="/character_image/e626.png"
                         name="E-626"
                         text={dialogue.text2}
+                        fullText={dialogue.currentText2}
                     />
                 </div>)}
 
@@ -97,7 +100,7 @@ const DialogueComponent = () => {
 
             {!dialogueVisible && (
                 <div className={styles['loader-container']}>
-                    <ChapterChange loadingText="CONNECTING TO EARTH..." chapterText="CH 1: What is PACE?" onClick={handleNextPage} containerOffset={-250}/>
+                    <ChapterChange loadingText="CONNECTING TO EARTH..." chapterText="CH 1: What is PACE?" onClick={handleNextPage} containerOffset={-250} />
                 </div>
             )}
 

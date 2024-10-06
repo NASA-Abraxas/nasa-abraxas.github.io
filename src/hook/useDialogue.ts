@@ -17,8 +17,10 @@ export const useDialogue = (
       onDialogueEnded?.();
     }
   }, [textIndex, textsFirst, textsSecond, onDialogueEnded]);
-  const textAnim1 = useTextAnimation(textsFirst[Math.max(Math.floor(textIndex / 2), 0)], intervalTime, handleTextEnd);
-  const textAnim2 = useTextAnimation(textsSecond[Math.max(Math.floor((textIndex - 1) / 2), 0)], intervalTime, handleTextEnd);
+  const currentText1 = textsFirst[Math.max(Math.floor(textIndex / 2), 0)];
+  const textAnim1 = useTextAnimation(currentText1, intervalTime, handleTextEnd);
+  const currentText2 = textsSecond[Math.max(Math.floor((textIndex - 1) / 2), 0)];
+  const textAnim2 = useTextAnimation(currentText2, intervalTime, handleTextEnd);
 
   useEffect(() => {
     if (textIndex < 0) return;
@@ -37,6 +39,8 @@ export const useDialogue = (
     textIndex,
     text1: textAnim1.text,
     text2: textAnim2.text,
+    currentText1,
+    currentText2,
     isText1Animating: textAnim1.isStarted && !textAnim1.isFinished,
     isText2Animating: textAnim2.isStarted && !textAnim2.isFinished,
     isAnimating: (textAnim1.isStarted && !textAnim1.isFinished) || (textAnim2.isStarted && !textAnim2.isFinished),
