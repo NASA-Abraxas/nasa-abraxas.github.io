@@ -15,7 +15,7 @@ export const Ch1Page0WhatIsPace = () => {
       <div className={styles['article']}>
         <DialogueBoxLeft imageSrc="character_image/rodriguez.png" name="Dr. Rodriguez" text={text1[difficulty]} isAnimated />
       </div>
-      <NextButton delay={4000} />
+      <NextButton delay={text1[difficulty].length * 30 + 1500} />
     </div>
   )
 }

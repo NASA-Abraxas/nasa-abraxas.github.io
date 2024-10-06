@@ -1,11 +1,13 @@
-import { useState, useEffect, useRef } from "react";
-import styles from './Loading.module.css'
+import { useContext, useEffect, useRef, useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import { AudioContext } from "../../context/AudioContext";
 import { useNavigateNextPage } from "../../hook/useNavigateNextPage";
 import { useTextAnimation } from "../../hook/useTextAnimation";
-import { Fade } from "react-awesome-reveal";
+import styles from './Loading.module.css';
 
 const LoadingComponent = () => {
   const handleNext = useNavigateNextPage();
+  const { setSpace } = useContext(AudioContext);
 
   const loadingTextAnim = useTextAnimation('TRAVEL LOG UPLOADING...');
   const [fullLoadingBarLength, setFullLoadingBarLength] = useState(1);
@@ -53,7 +55,10 @@ const LoadingComponent = () => {
         {finished && (<div className={styles["complete-text"]}>COMPLETED.</div>)}
       </div>
       {finished && (<Fade duration={600} delay={700}><div className={styles["button-container"]}>
-        <button onClick={handleNext}>NEXT</button>
+        <button onClick={() => {
+          handleNext();
+          setSpace(true);
+        }}>NEXT</button>
       </div></Fade>)}
     </>
   );

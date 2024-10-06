@@ -3,15 +3,26 @@ import { Fade } from 'react-awesome-reveal';
 import ArrowButton from '../../component/ArrowButton';
 import { DialogueBoxRight } from "../../component/DialogueBoxRight";
 import ParallaxWaves from '../../component/ParallaxWaves';
+import { AudioContext } from '../../context/AudioContext';
 import { DifficultyContext } from '../../context/DifficultyContext';
 import { useNavigateNextPage } from '../../hook/useNavigateNextPage';
 import Ch2BottomPage from './Ch2BottomPage';
+import { text2, text3 } from './Ch2MainPage.json';
 import styles from './Ch2MainPage.module.css';
 import Ch2TopPage from './Ch2TopPage';
-import { text2, text3 } from './Ch2MainPage.json'
 
 
 const Ch2MainPage: React.FC = () => {
+  const { setSpace, setWave, setWind, setBubble, setTyping } = useContext(AudioContext);
+  useEffect(() => {
+    setWave(true);
+    setSpace(false);
+    return () => {
+      setWave(false);
+      setTyping(false);
+    };
+  }, []);
+
   const handleNext = useNavigateNextPage()
   const [currentSection, setCurrentSection] = useState<number>(0);
 
@@ -88,6 +99,23 @@ const Ch2MainPage: React.FC = () => {
   const handleUp = () => scrollToSection(currentSection - 1);
   const handleDown = () => scrollToSection(currentSection + 1);
 
+  useEffect(() => {
+    console.log(currentSection);
+    if (currentSection === 0) { // atmosphere
+      setBubble(false);
+      setWind(true);
+      setWave(false);
+    } else if (currentSection === 1) { // main
+      setBubble(false);
+      setWind(false);
+      setWave(true);
+    } else if (currentSection === 2) { // ocean
+      setBubble(true);
+      setWind(false);
+      setWave(false);
+    }
+  }, [currentSection]);
+
   return (
     <>
       {/* Top Section */}
@@ -106,7 +134,10 @@ const Ch2MainPage: React.FC = () => {
         </div>
         <div className={styles['next-button-container']}>
           <Fade duration={1000} delay={0}>
-            <button onClick={handleNext}>NEXT</button>
+            <button onClick={() => {
+              handleNext();
+              setSpace(true);
+            }}>NEXT</button>
           </Fade>
         </div>
         <div className={styles['dialogue-container']}>
@@ -115,16 +146,16 @@ const Ch2MainPage: React.FC = () => {
         <div className={styles['bottom-button-container']}>
           <ArrowButton direction="down" onClick={handleDown} text='Ocean' />
         </div>
-      </div>
+      </div >
 
       {/* Bottom Section */}
-      <div id={styles["bottom-section"]} className={styles["section"]} ref={bottomSectionRef}>
+      < div id={styles["bottom-section"]} className={styles["section"]} ref={bottomSectionRef} >
         <Ch2BottomPage text={textAnimation3} isFinished={true} />
         <div className={styles['top-button-container2']}>
           <ArrowButton direction="up" onClick={handleUp} text='Back' />
         </div>
         <img src="waves/fish.png" alt="fish" className={styles["fish"]} />
-      </div>
+      </div >
     </>
   );
 };

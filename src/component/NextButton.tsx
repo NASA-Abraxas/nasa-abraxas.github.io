@@ -1,9 +1,11 @@
-import { Fade } from "react-awesome-reveal"
+import { useContext, useEffect, useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import { AudioContext } from "../context/AudioContext";
 import { useNavigateNextPage } from "../hook/useNavigateNextPage";
-import styles from './NextButton.module.css'
-import { useEffect, useState } from "react";
+import styles from './NextButton.module.css';
 
 export const NextButton = ({ duration = 1000, delay = 8000 }: { duration?: number; delay?: number }) => {
+  const { setSpace } = useContext(AudioContext);
   const handleNext = useNavigateNextPage();
   const [isClickable, setIsClickable] = useState(false);
   useEffect(() => {
@@ -15,7 +17,10 @@ export const NextButton = ({ duration = 1000, delay = 8000 }: { duration?: numbe
   return (
     <div className={styles['button-container']}>
       <Fade duration={duration} delay={delay}>
-        <button onClick={handleNext} style={{ visibility: !isClickable ? 'hidden' : undefined }}>NEXT</button>
+        <button onClick={() => {
+          handleNext();
+          setSpace(true);
+        }} style={{ visibility: !isClickable ? 'hidden' : undefined }}>NEXT</button>
       </Fade>
     </div>
   )

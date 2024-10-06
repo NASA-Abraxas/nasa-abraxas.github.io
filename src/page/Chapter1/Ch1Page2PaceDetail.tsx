@@ -42,7 +42,7 @@ export const Ch1Page2PaceDetail = () => {
   });
   useEffect(() => {
     startAnimation();
-  }, [startAnimation]);
+  }, []);
 
   const [cameraPosition, setCameraPosition] = useState<number[]>([10, 0, 0]);
   const [cameraPositionTarget, setCameraPositionTarget] = useState<number[]>([10, 0, 0]);

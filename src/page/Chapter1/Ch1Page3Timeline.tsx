@@ -27,7 +27,7 @@ export const Ch1Page3Timeline = () => {
   const { text, startAnimation } = useTextAnimation(fullText);
   useEffect(() => {
     startAnimation();
-  }, [startAnimation]);
+  }, []);
 
   const [selected, setSelected] = useState<string>("");
 
