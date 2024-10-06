@@ -11,7 +11,8 @@
 }
 
 .logo-container {
-  flex: 1;
+  flex-grow: 1;
+  height: 0;
   max-height: 60%;
 }
 
@@ -22,23 +23,6 @@
 }
 
 .article {
-  text-align: left;
-  align-self: center;
-  position: relative;
-}
-
-.article p {
-  border: 3px solid white;
-  padding: 0.5rem;
-}
-
-.article img {
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: auto;
-  height: 100%;
-  object-fit: contain;
-  border: 3px solid white;
-  border-bottom: none;
+  width: 100%;
+  height: 10em;
 }

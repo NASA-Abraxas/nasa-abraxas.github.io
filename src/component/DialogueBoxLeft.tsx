@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './DialogueBoxIndex.module.css'
 import { useTextAnimation } from '../hook/useTextAnimation';
 
@@ -12,6 +12,11 @@ interface DialogueBoxProps {
 
 export const DialogueBoxLeft: React.FC<DialogueBoxProps> = ({ imageSrc, name, isAnimated, text, fullText }) => {
   const textAnim = useTextAnimation(text);
+  if (isAnimated) {
+    useEffect(() => {
+      textAnim.startAnimation();
+    }, []);
+  }
 
   return (
     <div className={styles["dialogue-box"]}>

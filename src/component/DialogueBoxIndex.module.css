@@ -32,6 +32,7 @@
   flex-grow: 1;
   padding: 0.5em;
   border: 1px solid white;
+  position: relative;
 }
 
 .dialogue-text > span:first-child {
