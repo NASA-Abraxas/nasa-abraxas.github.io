@@ -4,7 +4,7 @@ import markdown from './test.md';
 
 const MarkdownTest = () => {
   return (
-    <div style={{ "overflowY": "scroll", "height": "100vh", "position": "absolute" }}>
+    <div>
       <ReactMarkdown
         children={markdown}
         remarkPlugins={[remarkGfm]}

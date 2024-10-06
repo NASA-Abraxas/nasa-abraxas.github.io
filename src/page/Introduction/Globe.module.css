@@ -150,7 +150,11 @@
 }
 
 .markdown-container > div {
-  padding: 0 7%;
+  position: absolute;
+  padding: 10vh 7%;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .markdown-container > div > h2 {
@@ -167,8 +171,19 @@
 }
 
 .markdown-container > button {
-  position: absolute;
-  right: 2%;
-  top: 0;
-  border-color: transparent;
+  position: fixed;
+  top: 10vh;
+  right: 3vw;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1000;
+  font-size: 1.5rem;
+  padding: 0;
+  width: 5vh;
+  height: 5vh;
+  line-height: 1vh;
+  border-radius: 0;
+  border: 2px solid white;
+  font-weight: 20;
 }
