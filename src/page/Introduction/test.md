@@ -29,7 +29,7 @@ By the end of the course, students should be able to:
 
 **Supplementary Materials from Khan Academy**:
 - **Cosmology and Astronomy**:  
-  [Scale of the Universe](https://www.khanacademy.org/science/cosmology-and-astronomy/universe-scale-topic)  
+  [The Scale of the Universe](https://www.khanacademy.org/science/cosmology-and-astronomy/universe-scale-topic)  
   Explore the vastness of the universe and Earth's place within it.
   
   [Search for Extraterrestrial Life](https://www.khanacademy.org/science/cosmology-and-astronomy/life-earth-universe)  

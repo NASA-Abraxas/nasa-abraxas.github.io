@@ -36,7 +36,7 @@ export const Ch3Page2GlobePin: React.FC = () => {
     ? "PACE data can influence many parts of our society. Turn around the Earth and click on the points."
     : difficulty === "intermediate"
       ? "PACE data can influence many aspects of our society. Rotate the Earth and click on the points to learn more."
-      : "PACE data influence a multitude of societal sectors. Rotate the globe and select various points of interest to learn more.";
+      : "PACE data influences a multitude of societal sectors. Rotate the globe and select various points of interest to learn more.";
   const { text, startAnimation } = useTextAnimation(fullText, 50, () => {
     gsap.to(`.${styles['dialogue-container']}>div`, { yPercent: -200, duration: 2, delay: 3 });
     setTimeout(() => {
